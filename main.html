@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Characters Form</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="ad-container top-ad">
+        <p> Ads</p>
+    </div>
+    
+    <div class="container">
+        <h1>Enter Your Favorites</h1>
+        <form id="favoritesForm">
+            <label for="hero">Favorite Hero:</label>
+            <input type="text" id="hero" name="hero" required>
+            
+            <label for="villain">Favorite Villain:</label>
+            <input type="text" id="villain" name="villain" required>
+            
+            <label for="actor">Favorite Actor:</label>
+            <input type="text" id="actor" name="actor" required>
+            
+            <label for="singer">Favorite Singer:</label>
+            <input type="text" id="singer" name="singer" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="ad-container bottom-ad">
+        <p>Ads </p>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="tick">&#10004;</div>
+            <p>Thanks!</p>
+            <button onclick="closeSite()">Exit</button>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
